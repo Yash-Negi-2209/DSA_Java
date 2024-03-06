@@ -28,7 +28,7 @@ class Merge2SortedLL {
 public static void main(String args[]) {
     Scanner sc = new Scanner(System.in);
     
-    Merge2SortedLL main = new Merge2SortedLL(); // Create an instance of Main class
+    Merge2SortedLL main = new Merge2SortedLL(); // Create an instance of Merge2SortedLL class
     
     int size1 = sc.nextInt();
     Node list1 = null;

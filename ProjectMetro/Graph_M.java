@@ -14,10 +14,12 @@ import java.io.*;
 			vtces = new HashMap<>();
 		}
 
+		@SuppressWarnings("static-access")
 		public int numVetex(){
 			return this.vtces.size();
 		}
 
+		@SuppressWarnings("static-access")
 		public boolean containsVertex(String vname){
 			return this.vtces.containsKey(vname);
 		}
@@ -486,6 +488,7 @@ import java.io.*;
 			return codes;
 		}
 		
+		@SuppressWarnings("unused")
 		public static void main(String[] args) throws IOException
 		{
 			Graph_M g = new Graph_M();

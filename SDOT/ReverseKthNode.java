@@ -96,3 +96,101 @@ class ReverseKthNode{
         System.out.print("NULL");
     }
 }
+
+
+//                                                           Faceprep
+
+                // import java.util.*;
+                // class Main
+                // {
+                
+                //   class Node{
+                //     int val;
+                //     Node next;
+                //     Node(int val){
+                //       this.val = val;
+                //       this.next = null;
+                //     }
+                //   }
+                
+                //   public static Node findKthNode(Node head, int k){
+                //     Node temp = head;
+                //     k = k-1;
+                //     while(temp!=null && k>0){
+                //       temp = temp.next;
+                //       k--;
+                //     }
+                //     return temp;
+                //   }
+                
+                //   public static void reverse(Node head){
+                //     Node prev = head;
+                //     Node curr = head;
+                //     while(curr!=null){
+                //       Node next = curr.next;
+                //       curr.next = prev;
+                //       prev = curr;
+                //       curr = next;
+                //     }
+                //     head.next = null;
+                //     head = prev;
+                //   }
+                
+                //   public static Node reverseKGroup(Node head, int k){
+                //     Node temp = head;
+                //     Node prevLast = null;
+                //     while (temp!=null){
+                //       Node kthnode = findKthNode(temp, k);
+                //       if (kthnode==null){
+                //         if (prevLast!=null){
+                //           prevLast.next = temp;
+                //         }
+                //         break;
+                //       }
+                //       Node nextnode = kthnode.next;
+                //       kthnode.next = null;
+                //       reverse(temp);
+                //       if (temp==head){
+                //         head = kthnode;
+                //       }
+                //       else{
+                //         prevLast.next = kthnode;
+                //       }
+                //       prevLast = temp;
+                //       temp = nextnode;
+                //     }
+                //     return head;
+                //   }
+                    
+                //   public static void main(String args[]){
+                //     Scanner sc = new Scanner(System.in);
+                //     Main main = new Main();
+                //     Node head = null;
+                //     Node prev = null;
+                //     while (sc.hasNextInt()){
+                //       int val = sc.nextInt();
+                //       if (val == -1){
+                //         break;
+                //       }
+                //       else{
+                //         Node newnode = main.new Node(val);
+                //         if (head==null){
+                //           head = newnode;
+                //         }
+                //         else{
+                //           prev.next = newnode;
+                //         }
+                //         prev = newnode;
+                //       }
+                //     }
+                    
+                //     int k = sc.nextInt();
+                    
+                //     Node result = reverseKGroup(head, k);
+                    
+                //     while(result!=null){
+                //       System.out.println(result.val);
+                //       result = result.next;
+                //     }
+                //   }
+                // }

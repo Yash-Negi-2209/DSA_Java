@@ -12,7 +12,7 @@ public class MergedKSortedLL {
 	}
 
     public static ListNode mergeSortedLists(List<ListNode> lists) {
-        PriorityQueue<ListNode> minHeap = new PriorityQueue<>((a, b) -> a.val - b.val);
+        PriorityQueue<ListNode> minHeap = new PriorityQueue<>((a, b) -> a.val - b.val);     //comparator
 
         // Add the heads of all lists to the min heap
         for (ListNode node : lists) {
@@ -38,7 +38,7 @@ public class MergedKSortedLL {
         }
         return dummy.next;
     }
-    
+
 
     @SuppressWarnings("resource")
     public static void main(String[] args) {

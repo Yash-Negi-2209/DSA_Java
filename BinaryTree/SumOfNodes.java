@@ -36,6 +36,7 @@ public class SumOfNodes {
         return leftnodes+rightnodes+root.data;
     }
 
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();
         int arr[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
